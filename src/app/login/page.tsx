@@ -16,7 +16,7 @@ export default function Login(){
         setError(null);
 
         try{
-            const response = await fetch(`http://api.malicc.store:${process.env.PORT || "4000"}/api/login`,{
+            const response = await fetch(`https://api.malicc.store:${process.env.PORT || "4000"}/api/login`,{
                 method:'POST',
                 headers:{
                     'Content-Type':'application/json'
