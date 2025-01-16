@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "@radix-ui/themes/styles.css";
 import { Theme } from "@radix-ui/themes";
 import "./globals.css";
+import HotjarScript from "@/components/HotjarScript";
 
 
 export const metadata: Metadata = {
@@ -16,6 +17,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <HotjarScript />
+      </head>
       <body
          
       >
