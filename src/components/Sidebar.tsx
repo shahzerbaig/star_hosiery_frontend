@@ -36,7 +36,7 @@ const Sidebar = () => {
         <nav>
           <ul className={`space-y-4 ${isOpen ? "block" : "hidden"} md:block`}>
             <li>
-              <Link href="/" className="text-blue-600 font-medium">
+              <Link href="/dashboard" className="text-blue-600 font-medium">
                 Dashboard
               </Link>
             </li>
