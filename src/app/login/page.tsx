@@ -46,7 +46,7 @@ export default function Login(){
       {error && <p className="mt-4 text-sm text-red-500">{error}</p>}
       <form onSubmit={handleSubmit} className="mt-6 space-y-4">
         <div>
-          <label htmlFor="username" className="block text-sm font-medium text-gray-700">
+          <label htmlFor="username" className="block text-sm font-medium text-white">
             Username
           </label>
           <input
@@ -60,7 +60,7 @@ export default function Login(){
           />
         </div>
         <div>
-          <label htmlFor="password" className="block text-sm font-medium text-gray-700">
+          <label htmlFor="password" className="block text-sm font-medium text-white">
             Password
           </label>
           <input
