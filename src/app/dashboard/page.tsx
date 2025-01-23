@@ -9,7 +9,7 @@ export default function Dashboard() {
     <DashboardLayout>
       <h2 className="text-2xl font-bold mb-6 ">Overview</h2>
       <div className="grid grid-cols-2 gap-6">
-        <CollectionCard title="Total Collections" amount={5000} />
+        
         <BillCard title="Total Bills" amount={3200} />
       </div>
     </DashboardLayout> );
