@@ -12,7 +12,7 @@ export default function Login() {
     const handleSubmit = async (event: React.FormEvent) => {
         event.preventDefault();
         setError(null);
-
+        
         try {
             const response = await fetch(`https://api.malicc.store/api/auth/login`, {
                 method: 'POST',
@@ -20,7 +20,7 @@ export default function Login() {
                     'Content-Type': 'application/json'
                 },
                 body: JSON.stringify({
-                    email: username,  // Or 'name' if your API expects username
+                    username: username,  // Or 'name' if your API expects username
                     password: password
                 }),
                 credentials: 'include'  // Keep this for cookies
